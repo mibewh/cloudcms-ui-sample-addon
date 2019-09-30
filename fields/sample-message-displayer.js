@@ -77,7 +77,7 @@ define(function (require, exports, module) {
             var self = this;
 
             this.base(function() {
-                self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
+                self.displayMessage("WARNING!");
 
                 callback();
             });
