@@ -24,7 +24,7 @@ define(function (require, exports, module) {
 
 
 
-            this.schema = {
+            Alpaca.merge(this.schema, {
 
                 "properties": {
 
@@ -48,7 +48,7 @@ define(function (require, exports, module) {
 
                 }
 
-            };
+            });
 
 
 
