@@ -72,7 +72,7 @@ define(function (require, exports, module) {
 
 
 
-        refrest: function (callback) {
+        refresh: function (callback) {
 
             var self = this;
 
