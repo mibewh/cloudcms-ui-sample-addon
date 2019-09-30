@@ -72,14 +72,16 @@ define(function (require, exports, module) {
 
 
 
-        onChange: function (e) {
+        postRender: function (callback) {
 
             var self = this;
 
-            this.base();
-            self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
+            this.base(function() {
+                self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
 
-            callback();
+                callback();
+            });
+
         }
 
     });
