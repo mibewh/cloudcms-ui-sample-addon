@@ -72,11 +72,11 @@ define(function (require, exports, module) {
 
 
 
-        afterRenderContainer: function (model, callback) {
+        refrest: function (callback) {
 
             var self = this;
 
-            this.base(model, function() {
+            this.base(function() {
                 self.displayMessage("WARNING!");
 
                 callback();
