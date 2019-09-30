@@ -76,9 +76,11 @@ define(function (require, exports, module) {
 
             var self = this;
 
-            self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
-
-            callback();
+            this.base(model, function() {
+                self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
+    
+                callback();
+            });
 
         }
 
