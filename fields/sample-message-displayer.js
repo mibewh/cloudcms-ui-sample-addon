@@ -72,16 +72,14 @@ define(function (require, exports, module) {
 
 
 
-        afterRenderContainer: function (model, callback) {
+        onChange: function (e) {
 
             var self = this;
 
-            this.base(model, function() {
-                self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
-    
-                callback();
-            });
+            this.base();
+            self.displayMessage({ "id": "showInSearchEngns", "message": "WARNING!" });
 
+            callback();
         }
 
     });
