@@ -68,21 +68,22 @@ define(function (require, exports, module) {
 
             });
 
+            self.displayMessage("WARNING!");
+
         },
 
 
 
-        afterRenderContainer: function (model, callback) {
+        // setup: function (, callback) {
 
-            var self = this;
+        //     var self = this;
 
-            this.base(model, function() {
-                self.displayMessage("WARNING!");
+        //     this.base(model, function() {
 
-                callback();
-            });
+        //         callback();
+        //     });
 
-        }
+        // }
 
     });
 
