@@ -72,11 +72,11 @@ define(function (require, exports, module) {
 
 
 
-        postRender: function (callback) {
+        render: function(view, callback) {
 
             var self = this;
    
-            this.base(function() {
+            this.base(view, function() {
                 console.log('yoyoyo');
                 self.displayMessage("WARNING!");
                 callback();
