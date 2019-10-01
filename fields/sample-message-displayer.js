@@ -72,13 +72,15 @@ define(function (require, exports, module) {
 
 
 
-        render: function(view, callback) {
+        afterRenderContainer: function(model, callback) {
 
             var self = this;
    
-            this.base(view, function() {
+            this.base(model, function() {
                 console.log('yoyoyo');
-                self.displayMessage("WARNING!");
+                $(self.getFieldEl()).remove("#warning-message");
+                $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
+
                 callback();
             });
 
