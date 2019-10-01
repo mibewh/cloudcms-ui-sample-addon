@@ -68,7 +68,7 @@ define(function (require, exports, module) {
 
             });
 
-            self.displayMessage("WARNING!");
+            this.displayMessage("WARNING!");
 
         },
 
