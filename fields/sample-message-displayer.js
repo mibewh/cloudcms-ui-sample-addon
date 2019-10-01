@@ -72,13 +72,15 @@ define(function (require, exports, module) {
 
 
 
-        handleValidate: function () {
+        postRender: function (callback) {
 
             var self = this;
    
-            this.base();
-            console.log('yoyoyo');
-            self.displayMessage("WARNING!");
+            this.base(function() {
+                console.log('yoyoyo');
+                self.displayMessage("WARNING!");
+                callback();
+            });
 
         }
 
