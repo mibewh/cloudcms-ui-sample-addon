@@ -72,16 +72,13 @@ define(function (require, exports, module) {
 
 
 
-        afterRenderContainer: function (model, callback) {
+        handleValidate: function () {
 
             var self = this;
    
+            this.base();
             console.log('yoyoyo');
             self.displayMessage("WARNING!");
-            this.base(model, function() {
-
-                callback();
-            });
 
         }
 
