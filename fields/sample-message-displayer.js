@@ -68,22 +68,22 @@ define(function (require, exports, module) {
 
             });
 
-            this.displayMessage("WARNING!");
-
         },
 
 
 
-        // setup: function (, callback) {
+        afterRenderContainer: function (model, callback) {
 
-        //     var self = this;
+            var self = this;
+   
+            console.log('yoyoyo');
+            self.displayMessage("WARNING!");
+            this.base(model, function() {
 
-        //     this.base(model, function() {
+                callback();
+            });
 
-        //         callback();
-        //     });
-
-        // }
+        }
 
     });
 
