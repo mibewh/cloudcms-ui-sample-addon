@@ -77,7 +77,7 @@ define(function (require, exports, module) {
             var self = this;
    
             this.base(model, function() {
-                console.log('yoyoyo');
+                debugger;
                 $(self.getFieldEl()).remove("#warning-message");
                 $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
 
