@@ -72,11 +72,11 @@ define(function (require, exports, module) {
 
 
 
-        updateChildDOMWrapperElement: function(i, child) {
+        bindData: function() {
 
             var self = this;
    
-            this.base(i, child);
+            this.base();
             debugger;
             $(self.getFieldEl()).remove("#warning-message");
             $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
