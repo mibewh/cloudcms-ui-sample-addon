@@ -58,7 +58,7 @@ define(function (require, exports, module) {
 
                     "showInSearchEngns": {
 
-                        "type": "select",
+                        "type": "sample-dropdown-guy",
 
                         "removeDefaultNone": true
 

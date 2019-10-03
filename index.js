@@ -13,6 +13,7 @@ define(function(require) {
     // require("./fields/sample-city-picker.js");
     // require("./fields/sample-content-picker.js");
     require("./fields/sample-message-displayer.js");
+    require("./fields/sample-dropdown-guy.js");
 
     // sample override to document-properties
     // require("./gadgets/sample-product-document-properties/sample-product-document-properties.js");
