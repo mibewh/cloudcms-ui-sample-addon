@@ -68,6 +68,9 @@ define(function (require, exports, module) {
 
             });
 
+            debugger;
+            $(self.getFieldEl()).remove("#warning-message");
+            $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
         },
 
 
@@ -77,9 +80,7 @@ define(function (require, exports, module) {
             var self = this;
    
             this.base(model, function() {
-                debugger;
-                $(self.getFieldEl()).remove("#warning-message");
-                $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
+                
 
                 callback();
             });
