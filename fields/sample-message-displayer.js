@@ -72,11 +72,11 @@ define(function (require, exports, module) {
 
 
 
-        getConainerValue: function() {
+        refreshDependentFieldStates: function(pid) {
 
             var self = this;
    
-            this.base();
+            this.base(pid);
             debugger;
             $(self.getFieldEl()).remove("#warning-message");
             $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
