@@ -70,22 +70,6 @@ define(function (require, exports, module) {
 
         },
 
-
-
-        bindData: function() {
-
-            var self = this;
-   
-            this.base();
-            debugger;
-            $(self.getFieldEl()).remove("#warning-message");
-            $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
-
-            // callback();
-
-
-        }
-
     });
 
 
