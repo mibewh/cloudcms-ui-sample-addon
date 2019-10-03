@@ -72,11 +72,12 @@ define(function (require, exports, module) {
 
 
 
-        updateDOMElement: function() {
+        setValue: function(data) {
 
             var self = this;
    
-            this.base();
+            this.base(data);
+            debugger;
             $(self.getFieldEl()).remove("#warning-message");
             $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
 
