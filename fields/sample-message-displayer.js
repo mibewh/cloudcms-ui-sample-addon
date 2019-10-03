@@ -72,17 +72,16 @@ define(function (require, exports, module) {
 
 
 
-        applyCreatedItems: function(model, callback) {
+        onChange: function(e) {
 
             var self = this;
    
-            this.base(model, function() {
-                debugger;
-                $(self.getFieldEl()).remove("#warning-message");
-                $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
+            this.base(e);
+            $(self.getFieldEl()).remove("#warning-message");
+            $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
 
-                callback();
-            });
+            // callback();
+
 
         }
 
