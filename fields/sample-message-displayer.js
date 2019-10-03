@@ -72,11 +72,11 @@ define(function (require, exports, module) {
 
 
 
-        setValue: function(data) {
+        getConainerValue: function() {
 
             var self = this;
    
-            this.base(data);
+            this.base();
             debugger;
             $(self.getFieldEl()).remove("#warning-message");
             $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
