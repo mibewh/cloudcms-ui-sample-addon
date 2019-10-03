@@ -9,23 +9,17 @@ define(function (require, exports, module) {
     Alpaca.Fields.TestField = Alpaca.Fields.SelectField.extend({
 
 
-        afterRenderControl: function(model, callback) {
+        afterSetValue: function() {
 
             var self = this;
    
-            this.base(model, function() {
-                debugger;
-                $(".warning-message").remove();
-                if (data[0] == 'Yes')
-                {
-                    $(self.getFieldEl()).append("<span class='warning-message'>WARNING!</span>");
-                }
-
-                callback();
-            });
-
-
-
+            this.base();
+            debugger;
+            $(".warning-message").remove();
+            if (data[0] == 'Yes')
+            {
+                $(self.getFieldEl()).append("<span class='warning-message'>WARNING!</span>");
+            }
         }
 
     });
