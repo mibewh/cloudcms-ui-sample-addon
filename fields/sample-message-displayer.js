@@ -69,8 +69,8 @@ define(function (require, exports, module) {
             });
 
             debugger;
-            $(self.getFieldEl()).remove("#warning-message");
-            $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
+            $(this.getFieldEl()).remove("#warning-message");
+            $(this.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
         },
 
 
