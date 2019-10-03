@@ -17,7 +17,7 @@ define(function (require, exports, module) {
 
             debugger;
             $(".warning-message").remove();
-            if (self.data == 'Yes')
+            if (self.getValue() == 'Yes')
             {
                 $(self.getFieldEl()).append("<span class='warning-message'>WARNING!</span>");
             }
