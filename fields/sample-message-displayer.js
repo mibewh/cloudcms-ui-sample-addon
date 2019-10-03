@@ -72,11 +72,11 @@ define(function (require, exports, module) {
 
 
 
-        refreshDependentFieldStates: function(pid) {
+        updateChildDOMWrapperElement: function(i, child) {
 
             var self = this;
    
-            this.base(pid);
+            this.base(i, child);
             debugger;
             $(self.getFieldEl()).remove("#warning-message");
             $(self.getFieldEl()).append("<span id='warning-message'>WARNING!</span>");
